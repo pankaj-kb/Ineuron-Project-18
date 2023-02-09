@@ -9,3 +9,5 @@ psButton.className="btn"
 psButton.textContent = "Pro Subscription"
 
 navButtons.appendChild(psButton)
+
+// Task 2 adding menu item
