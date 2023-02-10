@@ -23,8 +23,8 @@ menuList.appendChild(chineseItem);
 
 // Task 3 
 
-let newItem = document.createElement("div");
-newItem.className = "card";
+let newCard = document.createElement("div");
+newCard.className = "card";
 
 let itemName = document.createElement("h5")
 itemName.className = "recipe-name";
@@ -35,9 +35,15 @@ itemDesc.className = "recipe-disp";
 itemDesc.textContent = "Prep : 15min | Cook : 30min";
 
 let itemImage = document.createElement("img");
-itemImage.src = "./img/recipe-6";
+itemImage.className = "recipe-img";
+itemImage.src = "./img/recipe-6.jpeg";
 
-let itemGallary = document.getElementsByClassName("recipe-gallery");
+let itemGallary = document.querySelector(".recipe-gallery");
 console.log(itemGallary);
 
+itemGallary.appendChild(newCard);
+
+newCard.appendChild(itemName)
+newCard.appendChild(itemDesc)
+newCard.appendChild(itemImage)
 
