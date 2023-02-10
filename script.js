@@ -20,3 +20,5 @@ chineseItem.href = "#";
 chineseItem.innerText="Chinese(7)";
 
 menuList.appendChild(chineseItem);
+
+// Task 3 
