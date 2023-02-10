@@ -22,3 +22,7 @@ chineseItem.innerText="Chinese(7)";
 menuList.appendChild(chineseItem);
 
 // Task 3 
+
+let newItem = document.createElement("div");
+newItem.className = "card";
+
