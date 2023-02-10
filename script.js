@@ -13,7 +13,7 @@ navButtons.appendChild(psButton)
 // Task 2 adding menu item
 
 let menuList = document.querySelector(".tags-container div");
-console.log(menuList)
+// console.log(menuList)
 
 let chineseItem = document.createElement("a");
 chineseItem.href = "#";
@@ -25,4 +25,19 @@ menuList.appendChild(chineseItem);
 
 let newItem = document.createElement("div");
 newItem.className = "card";
+
+let itemName = document.createElement("h5")
+itemName.className = "recipe-name";
+itemName.textContent = "Pan-Cake";
+
+let itemDesc = document.createElement("p");
+itemDesc.className = "recipe-disp";
+itemDesc.textContent = "Prep : 15min | Cook : 30min";
+
+let itemImage = document.createElement("img");
+itemImage.src = "./img/recipe-6";
+
+let itemGallary = document.getElementsByClassName("recipe-gallery");
+console.log(itemGallary);
+
 
