@@ -21,7 +21,7 @@ chineseItem.innerText="Chinese(7)";
 
 menuList.appendChild(chineseItem);
 
-// Task 3 
+// Task 3 adding recipe-6
 
 let newCard = document.createElement("div");
 newCard.className = "card";
@@ -39,11 +39,19 @@ itemImage.className = "recipe-img";
 itemImage.src = "./img/recipe-6.jpeg";
 
 let itemGallary = document.querySelector(".recipe-gallery");
-console.log(itemGallary);
+// console.log(itemGallary);
 
 itemGallary.appendChild(newCard);
 
+newCard.appendChild(itemImage)
 newCard.appendChild(itemName)
 newCard.appendChild(itemDesc)
-newCard.appendChild(itemImage)
+
+// Task 4 changing name in footer
+
+let footerElement = document.querySelector(".page-footer a");
+
+footerElement.innerText = "Pankaj";
+
+
 
